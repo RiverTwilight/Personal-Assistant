@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const sendToWechat = require("./send-to-wechat.js");
+const sendToWechat = require("../push/wechat.js");
 
 const HEADLESS = true;
 
