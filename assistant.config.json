@@ -1,0 +1,9 @@
+{
+	"plugin": [{ "src": "/components/apple-news.js", "config": {} }],
+	"push": {
+		"wechat": {
+			"targetUser": [],
+			"webhook": ""
+		}
+	}
+}
