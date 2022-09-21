@@ -1,5 +1,3 @@
-const config = require("./config.json");
-
 class Assistant {
 	constructor(config) {
 		this.config = config;

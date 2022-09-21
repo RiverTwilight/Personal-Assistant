@@ -4,6 +4,10 @@
 		"wechat": {
 			"targetUser": [],
 			"webhook": ""
+		},
+		"telegram": {
+			"targetUser": [],
+			"webhook": ""
 		}
 	}
 }
