@@ -1,12 +1,27 @@
 {
-	"plugin": [{ "src": "/components/apple-news.js", "config": {} }],
+	"service": [
+		{
+			"src": "./components/core/swpu/is.js",
+			"config": {
+				"user": [
+					{
+						"channel": "xyxw",
+						"uid": "123456",
+						"push": {
+							"wechat": {
+								"username": "WangRenJie"
+							}
+						}
+					}
+				]
+			}
+		}
+	],
 	"push": {
 		"wechat": {
-			"targetUser": [],
 			"webhook": ""
 		},
 		"telegram": {
-			"targetUser": [],
 			"webhook": ""
 		}
 	}

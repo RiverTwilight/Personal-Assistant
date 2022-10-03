@@ -1,18 +1,17 @@
-// send to wechat bot
 const axios = require("axios");
 const qs = require("querystring");
 const dotenv = require("dotenv");
 
 dotenv.config();
 
-async function sendToWechat(message) {
+async function sendToWechat(message, targetUser) {
 	const res = await axios(
 		"https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" +
 			process.env.WECHAT_ACCESS_TOKEN,
 		{
 			method: "post",
 			data: JSON.stringify({
-				touser: "WangRenJie",
+				touser: targetUser.join("|"),
 				toparty: "PartyID1|PartyID2",
 				totag: "TagID1 | TagID2",
 				msgtype: "markdown",

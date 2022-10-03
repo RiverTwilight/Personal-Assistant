@@ -4,10 +4,9 @@ class Assistant {
 		this.instance = [];
 	}
 
-	regsiter(type, config) {
-		if (type === "news") {
-			this.instance;
-		}
+	regsiter(src, config) {
+		const instance = require(src)(config);
+		this.instance.push(instance);
 	}
 
 	destroy(instance) {}
