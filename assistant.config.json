@@ -3,17 +3,13 @@
 		{
 			"src": "./components/core/swpu/is.js",
 			"config": {
-				"user": [
-					{
-						"channel": "xyxw",
-						"uid": "123456",
-						"push": {
-							"wechat": {
-								"username": "WangRenJie"
-							}
-						}
+				"channel": ["xyxw", "tzgg"],
+				"uid": "123456",
+				"push": {
+					"wechat": {
+						"username": "WangRenJie"
 					}
-				]
+				}
 			}
 		}
 	],
